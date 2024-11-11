@@ -47,31 +47,26 @@
         &-icono{
             padding: var(--c-menu-padding-exterior);
         }
-        &-text{
-            padding: var(--c-menu-padding-interior);
-            &--titulo{
-                font-weight: bold;
-                font-size: var(--c-menu-option-titulo-font-size);
-                color: var(--c-menu-option-titulo-color);
-                
-                &--warning{
-                    color: var(--c-menu-option-color-titulo-warning);
-                }
+        &-titulo{
+            font-weight: bold;
+            font-size: var(--c-menu-option-titulo-font-size);
+            color: var(--c-menu-option-titulo-color);
+            
+            &--warning{
+                color: var(--c-menu-option-color-titulo-warning);
             }
-            &--subtitulo{
-                font-size: var(--c-menu-option-subtitulo-font-size);
-                color: var(--c-menu-option-subtitulo-color);
+        }
+        &-subtitulo{
+            font-size: var(--c-menu-option-subtitulo-font-size);
+            color: var(--c-menu-option-subtitulo-color);
 
-                &--warning{
-                    color: var(--c-menu-option-color-subtitulo-warning);
-                }
+            &--warning{
+                color: var(--c-menu-option-color-subtitulo-warning);
             }
         }
         
-        
         &--warning{
             background-color: var(--c-menu-option-background-color-warning);
-            color: var(--c-menu-option-color-titulo-warning);
             @include border(var(--border-2),var(--border-style-solid),var(--c-menu-option-background-color-warning-hover),var(--border-radius-2));
 
             :hover{

@@ -938,27 +938,23 @@
 .c-menu-lateral__opcion-icono {
   padding: var(--c-menu-padding-exterior);
 }
-.c-menu-lateral__opcion-text {
-  padding: var(--c-menu-padding-interior);
-}
-.c-menu-lateral__opcion-text--titulo {
+.c-menu-lateral__opcion-titulo {
   font-weight: bold;
   font-size: var(--c-menu-option-titulo-font-size);
   color: var(--c-menu-option-titulo-color);
 }
-.c-menu-lateral__opcion-text--titulo--warning {
+.c-menu-lateral__opcion-titulo--warning {
   color: var(--c-menu-option-color-titulo-warning);
 }
-.c-menu-lateral__opcion-text--subtitulo {
+.c-menu-lateral__opcion-subtitulo {
   font-size: var(--c-menu-option-subtitulo-font-size);
   color: var(--c-menu-option-subtitulo-color);
 }
-.c-menu-lateral__opcion-text--subtitulo--warning {
+.c-menu-lateral__opcion-subtitulo--warning {
   color: var(--c-menu-option-color-subtitulo-warning);
 }
 .c-menu-lateral__opcion--warning {
   background-color: var(--c-menu-option-background-color-warning);
-  color: var(--c-menu-option-color-titulo-warning);
   border-style: var(--border-style-solid);
   border-width: var(--border-2);
   border-color: var(--c-menu-option-background-color-warning-hover);
