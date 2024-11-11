@@ -39,6 +39,10 @@
         width: var(--c-menu-width);
     }
 
+    &__opciones{
+        overflow: auto;
+    }
+
     &__opcion {
         display: flex;
         flex-direction: row;

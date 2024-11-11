@@ -929,6 +929,9 @@
   background-color: var(--c-menu-background-color);
   width: var(--c-menu-width);
 }
+.c-menu-lateral__opciones {
+  overflow: auto;
+}
 .c-menu-lateral__opcion {
   display: flex;
   flex-direction: row;
