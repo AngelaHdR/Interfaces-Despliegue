@@ -20,8 +20,9 @@
 
     --c-menu-width: var(--width-300);
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
     width: var(--c-menu-width);
     height: 100vh;
     top:0;
@@ -29,16 +30,12 @@
     background-color: var(--c-menu-background-color);
     padding:var(--c-menu-padding-exterior);
     font-family: var(--c-menu-font-family);
-    overflow: auto;
     
     &__logo {
         font-size: var(--c-menu-logo-font-size);
         padding: var(--c-menu-padding-exterior);
         background-color: var(--c-menu-background-color);
         width: var(--c-menu-width);
-        position: fixed;
-        top:0;
-        left:0;
     }
 
     &__opcion {
@@ -85,7 +82,7 @@
             /*Se aplica por separado al icono y al div*/
             :hover{
                 background-color: var(--c-menu-option-background-color-hover);
-                @include border(var(--border-0),var(--border-style-solid),var(--c-menu-option-background-color-hover),var(--border-radius-2));
+                @include border(var(--border-1),var(--border-style-solid),var(--c-menu-option-background-color-hover),var(--border-radius-2));
             }
         }
     }
@@ -95,8 +92,5 @@
         padding: var(--c-menu-padding-exterior);
         background-color: var(--c-menu-background-color);
         width: var(--c-menu-width);
-        position: fixed;
-        bottom:0;
-        left:0;
     }
 }

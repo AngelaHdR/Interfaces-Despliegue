@@ -913,8 +913,8 @@
   --c-menu-padding-exterior: var(--padding-4);
   --c-menu-padding-interior: var(--padding-2);
   --c-menu-width: var(--width-300);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: var(--c-menu-width);
   height: 100vh;
   top: 0;
@@ -922,16 +922,12 @@
   background-color: var(--c-menu-background-color);
   padding: var(--c-menu-padding-exterior);
   font-family: var(--c-menu-font-family);
-  overflow: auto;
 }
 .c-menu-lateral__logo {
   font-size: var(--c-menu-logo-font-size);
   padding: var(--c-menu-padding-exterior);
   background-color: var(--c-menu-background-color);
   width: var(--c-menu-width);
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 .c-menu-lateral__opcion {
   display: flex;
@@ -977,7 +973,7 @@
 .c-menu-lateral__opcion--info :hover {
   background-color: var(--c-menu-option-background-color-hover);
   border-style: var(--border-style-solid);
-  border-width: var(--border-0);
+  border-width: var(--border-1);
   border-color: var(--c-menu-option-background-color-hover);
   border-radius: var(--border-radius-2);
 }
@@ -986,9 +982,6 @@
   padding: var(--c-menu-padding-exterior);
   background-color: var(--c-menu-background-color);
   width: var(--c-menu-width);
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 
 /*Global*/
