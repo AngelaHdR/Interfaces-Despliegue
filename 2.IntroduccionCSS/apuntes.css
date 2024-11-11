@@ -1,0 +1,26 @@
+/*
+c- : component
+l- : layout -> los layout no se ven, no tienen ni color ni borde ni tamaño, solo organizan los elementos
+-- : modificador (añadir una caracteristica despues)
+__ : elemento relacionado con un componente (elemento hijo) -> no se puede escribir dos veces seguido (nietos no)
+c-"component"--"caracteristica"
+c_"component"__"element"--"caracteristica"
+*/
+
+/*
+Estructura de carpetas scss
+01_utilities
+    css-variables
+02_base
+    override_reset_typography
+03_layout
+    cada_layout
+04_components
+    cada_componente
+05_pages
+    estilos_pagina_concreta
+06_global
+    modificadores_globales
+main.scss
+
+*/

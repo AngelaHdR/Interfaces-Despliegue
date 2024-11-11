@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Display/Visibility</title>
+</head>
+<body>
+    <div class="card l-flex l-flex--direction-horizontal">
+        <p>Senderismo</p>
+        <button class="c-boton c-boton--funcion-alternativa c-boton--importancia-secundaria" id="guardar">Guardar en la lista</button>
+        <button class="c-boton" style="display: inline-block; width:160px" id="mostrar">Mostra en el mapa</button>
+    </div>
+    <script>
+        let botonMapa = document.getElementById("mostrar");
+        botonMapa.addEventListener("click",()=>{
+            botonMapa.textContent="Ocultar";
+        });
+        let guardar = document.getElementById("guardar");
+        guardar.addEventListener("click",()=>{
+            guardar.className="c-boton c-boton--funcion-alternativa";
+        });
+    </script>
+</body>
+</html>
